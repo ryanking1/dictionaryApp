@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PingPongTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-02-08T18:50:03" hostname="epicodus-67.local" time="0.002">
+<testsuite name="PingPongTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-02-08T21:59:54" hostname="epicodus-67.local" time="0.003">
   <properties/>
-  <testcase name="isPingPong_arrayPing" classname="PingPongTest" time="0.001"/>
+  <testcase name="isPingPong_arrayPing" classname="PingPongTest" time="0.002"/>
   <testcase name="isPingPong_arrayPong" classname="PingPongTest" time="0.0"/>
   <testcase name="isPingPong_array" classname="PingPongTest" time="0.0"/>
   <testcase name="isPingPong_arrayPingPong" classname="PingPongTest" time="0.0"/>
