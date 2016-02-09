@@ -1,9 +1,9 @@
 import java.util.Map;
 import java.util.HashMap;
+import java.util.ArrayList;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 import static spark.Spark.*;
-import java.util.ArrayList;
 
 public class PingPong {
   public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class PingPong {
 
     get("/", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
-      model.put("template", "templates/pingpong.vtl");
+      model.put("template", "templates/main.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
