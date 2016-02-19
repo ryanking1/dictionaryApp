@@ -25,4 +25,12 @@ public class WordTest {
     assertTrue(testWord.getDefinitions() instanceof ArrayList);
   }
 
+  @Test
+  public void allMethodReturnsAllInstancesOfWord() {
+    Word firstWord = new Word("one");
+    Word secondWord = new Word("Two");
+    assertTrue(Word.all().contains(firstWord));
+    assertTrue(Word.all().contains(secondWord));
+  }
+
 }
