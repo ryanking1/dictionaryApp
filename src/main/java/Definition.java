@@ -10,3 +10,28 @@ public class Definition {
     instances.add(this);
     mId = instances.size();
   }
+
+  public String getDefinition() {
+    return mDefinition;
+  }
+
+  public int getId() {
+    return mId;
+  }
+
+  public static Definition find(int id) {
+    try {
+      return instances.get(id-1);
+    } catch (IndexOutOfBoundsException e) {
+      return null;
+    }
+  }
+
+  public static void clear() {
+    instances.clear();
+  }
+
+  public static ArrayList<Definition> all() {
+    return instances;
+  }
+}
