@@ -19,4 +19,10 @@ public class WordTest {
     assertTrue(Word.all().size() == testWord.getId());
   }
 
+  @Test
+  public void getDefinitionsReturnsArrayList() {
+    Word testWord = new Word("test");
+    assertTrue(testWord.getDefinitions() instanceof ArrayList);
+  }
+
 }
