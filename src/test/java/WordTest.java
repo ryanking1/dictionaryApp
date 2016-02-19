@@ -47,4 +47,10 @@ public class WordTest {
     assertTrue(testWord.getDefinitions().contains(testDefinition));
   }
 
+  @Test
+  public void clearsWordInstancesFromMemory() {
+    Word testWord = new Word("test");
+    Word.clear();
+    assertEquals(Word.all().size(), 0);
+  }
 }
