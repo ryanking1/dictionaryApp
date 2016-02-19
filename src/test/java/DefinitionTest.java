@@ -4,4 +4,9 @@ import java.util.ArrayList;
 
 public class DefinitionTest {
 
+  @Test
+  public void definitionObjectInitializesCorrectly() {
+    Definition testDefinition = new Definition("test");
+    assertEquals(true, testDefinition instanceof Definition);
+  }
 }
