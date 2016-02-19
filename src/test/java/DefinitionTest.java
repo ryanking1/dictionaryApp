@@ -23,4 +23,12 @@ public class DefinitionTest {
     assertTrue(Definition.all().contains(testOne));
     assertTrue(Definition.all().contains(testTwo));
   }
+
+  @Test
+  public void findMethodReturnsDefinitionWithSameID() {
+    Definition testOne = new Definition("one");
+    Definition testTwo = new Definition("two");
+    assertEquals(Definition.find(testOne.getId()), testOne);
+    assertEquals(Definition.find(testTwo.getId()), testTwo);
+  }
 }
