@@ -72,6 +72,7 @@ public class App {
         Definition newDefinition = new Definition(definition);
 
         definitions.add(newDefinition);
+        model.put("word", word);
         model.put("definitions", definitions);
         model.put("template", "templates/word-definition.vtl");
         return new ModelAndView(model, layout);
