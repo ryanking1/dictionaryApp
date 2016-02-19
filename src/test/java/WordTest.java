@@ -33,4 +33,10 @@ public class WordTest {
     assertTrue(Word.all().contains(secondWord));
   }
 
+  @Test
+  public void findMethodReturnsWordWithSameId() {
+    Word testWord = new Word("test");
+    assertEquals(Word.find(testWord.getId()), testWord);
+  }
+
 }
