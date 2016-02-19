@@ -1,0 +1,8 @@
+<h1>Current definitions for $word.getWord():</h1>
+
+#foreach($definition in $word.getDefinitions())
+  <h3>$definition.getDefinition()</h3>
+#end
+
+<a href="/$word.getId()/definitionForm">Add a new definition</a>
+<a href="/">Return to Words List</a>

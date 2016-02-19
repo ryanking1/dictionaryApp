@@ -1,3 +1,7 @@
 <h1>Word List</h1>
 
+#foreach($word in $words)
+ <h3><a href="/$word.getId()">$word.getWord()</a></h3>
+#end
+
 <a href="/wordform">Add a New Word</a>
