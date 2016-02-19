@@ -39,4 +39,12 @@ public class WordTest {
     assertEquals(Word.find(testWord.getId()), testWord);
   }
 
+  @Test
+  public void addDefinitionToWordObject() {
+    Word testWord = new Word("test");
+    Definition testDefinition = new Definition("definition");
+    testWord.addDefinition(testDefinition);
+    assertTrue(testWord.getDefinitions().contains(testDefinition));
+  }
+
 }
