@@ -31,4 +31,16 @@ public class DefinitionTest {
     assertEquals(Definition.find(testOne.getId()), testOne);
     assertEquals(Definition.find(testTwo.getId()), testTwo);
   }
+
+  @Test
+  public void findMethodReturnsNullWhenNoDefinitionFound() {
+    assertTrue(Definition.find(999) == null);
+  }
+
+  @Test
+  public void clearMethodEmptiesDefinitionArrayList () {
+    Definition testDefinition = new Definition("test");
+    Definition.clear();
+    assertEquals(Definition.all().size(), 0);
+  }
 }

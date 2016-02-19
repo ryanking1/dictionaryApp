@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DefinitionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-02-19T17:07:15" hostname="epicodus-64.local" time="0.001">
+<testsuite name="DefinitionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-02-19T17:10:21" hostname="epicodus-64.local" time="0.001">
   <properties/>
   <testcase name="getDefinitionMethodReturnsCorrectDefinition" classname="DefinitionTest" time="0.001"/>
   <testcase name="findMethodReturnsDefinitionWithSameID" classname="DefinitionTest" time="0.0"/>
+  <testcase name="findMethodReturnsNullWhenNoDefinitionFound" classname="DefinitionTest" time="0.0"/>
   <testcase name="allMethodReturnsAllInstancesOfDefinition" classname="DefinitionTest" time="0.0"/>
+  <testcase name="clearMethodEmptiesDefinitionArrayList" classname="DefinitionTest" time="0.0"/>
   <testcase name="definitionObjectInitializesCorrectly" classname="DefinitionTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
