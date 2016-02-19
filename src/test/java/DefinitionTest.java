@@ -15,4 +15,12 @@ public class DefinitionTest {
     Definition testDefinition = new Definition("test");
     assertEquals("test", testDefinition.getDefinition());
   }
+
+  @Test
+  public void allMethodReturnsAllInstancesOfDefinition() {
+    Definition testOne = new Definition("one");
+    Definition testTwo = new Definition("Two");
+    assertTrue(Definition.all().contains(testOne));
+    assertTrue(Definition.all().contains(testTwo));
+  }
 }
